@@ -39,3 +39,21 @@ Para eliminar, el método `eliminarPorId` busca en la lista el producto con el i
 Para ordenar usamos `Collections.sort` con un `Comparator`, que es la regla para comparar dos productos. `ordenarPorPrecio` los deja de menor a mayor precio y `ordenarPorNombre` los deja en orden alfabético, sin importar si las letras son mayúsculas o minúsculas.
 
 - Kathleen Carola Durand Quispe (Integrante 3): eliminar productos por id y ordenar la lista por precio y por nombre usando Collections.
+
+
+
+
+
+## Evidencias
+Las capturas de pantalla del funcionamiento y del código se guardarán en la carpeta `evidencias`.
+
+## Integrantes
+- Integrante 1: Donny Scrach Gaspar Araujo
+- Integrante 2: Flor de Venus Torres Condori
+- Integrante 3: Kathleen Carola Durand Quispe
+- Integrante 4:
+  
+## Repositorio
+
+
+## Video de exposición
