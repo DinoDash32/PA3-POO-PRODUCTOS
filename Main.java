@@ -12,7 +12,7 @@ public class Main {
 
         do {
             System.out.println("--------------------------------------------");
-            System.out.println("----TIENDA - GESTIÓN DE PRODUCTOS (POO)----");
+            System.out.println("===== MENÚ DE PRODUCTOS =====");
             System.out.println("--------------------------------------------");
             System.out.println("1. Ver todos los productos");
             System.out.println("2. Agregar un producto");
