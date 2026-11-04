@@ -14,3 +14,4 @@ Al iniciar, el método cargarDatosIniciales agrega 8 productos de ejemplo con ad
 Usamos un ArrayList en lugar de un arreglo común porque crece solo cuando se agregan productos, y permite eliminar y ordenar con métodos ya hechos (remove y Collections.sort) sin manejar posiciones a mano.
 
 - Donny Scrach Gaspar Araujo (Integrante 1): repositorio, clase Producto, lista inicial y listado de productos.
+- Kathleen Carola Durand Quispe (Integrante 3): eliminar productos por id y ordenar la lista por precio y por nombre usando Collections.
