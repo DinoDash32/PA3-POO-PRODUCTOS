@@ -1,3 +1,6 @@
+import java.util.Collections;
+import java.util.Comparator;
+
 import java.util.ArrayList;
 
 public class GestorProductos {
@@ -36,14 +39,38 @@ public class GestorProductos {
 
     // ===== PARTE DEL INTEGRANTE 3 =====
     public boolean eliminarPorId(int id) {
-        return false; // pendiente
+        // 1. Buscar el producto con ese id (sin borrar todavía)
+        Producto encontrado = null;
+        for (Producto p : productos) {
+            if (p.getId() == id) {
+                encontrado = p;
+            }
+        }
+        // 2. Si existe, quitarlo de la lista y avisar con true; si no, false
+        if (encontrado != null) {
+            productos.remove(encontrado);
+            return true;
+        }
+        return false;
     }
 
     public void ordenarPorPrecio() {
-        // pendiente
+        // Menor a mayor precio
+        Collections.sort(productos, new Comparator<Producto>() {
+            @Override
+            public int compare(Producto a, Producto b) {
+                return Double.compare(a.getPrecio(), b.getPrecio());
+            }
+        });
     }
 
     public void ordenarPorNombre() {
-        // pendiente
+        // Orden alfabético (sin distinguir mayúsculas)
+        Collections.sort(productos, new Comparator<Producto>() {
+            @Override
+            public int compare(Producto a, Producto b) {
+                return a.getNombre().compareToIgnoreCase(b.getNombre());
+            }
+        });
     }
 }
