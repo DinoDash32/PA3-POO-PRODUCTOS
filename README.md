@@ -15,6 +15,23 @@ Usamos un ArrayList en lugar de un arreglo común porque crece solo cuando se ag
 
 - Donny Scrach Gaspar Araujo (Integrante 1): repositorio, clase Producto, lista inicial y listado de productos.
 
+## Registro y búsqueda de productos
+
+Método agregarProducto.
+
+Este método recibe un objeto de tipo Producto y verifica que no exista otro producto con el mismo ID.
+Para realizar esta comprobación utilizamos un ciclo for y una condición if.
+Si el ID ya existe, el programa muestra un mensaje y no permite agregarlo.
+Si el ID no existe, utilizamos el método add() de ArrayList para registrar el nuevo producto.
+
+Método buscarPorId.
+
+Este método recibe un identificador y recorre la lista de productos utilizando un ciclo for.
+Compara el ID solicitado con el ID de cada producto. Si encuentra una coincidencia, devuelve el producto.
+Si no encuentra ningún resultado, devuelve null.
+
+- Flor de Venus Torres Condori (Integrante 2): agregarProducto y buscarPorId.
+
 ## Eliminar y ordenar productos
 
 Para eliminar, el método `eliminarPorId` busca en la lista el producto con el id que se pide y, si lo encuentra, lo quita con `remove`. Devuelve `true` si pudo eliminarlo y `false` si el id no existe, así el menú le avisa al usuario qué pasó.
