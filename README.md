@@ -51,7 +51,7 @@ Las capturas de pantalla del funcionamiento y del código se guardarán en la ca
 - Integrante 1: Donny Scrach Gaspar Araujo
 - Integrante 2: Flor de Venus Torres Condori
 - Integrante 3: Kathleen Carola Durand Quispe
-- Integrante 4:
+- Integrante 4: Fabriccio Marticorena Colan
   
 ## Repositorio
 
