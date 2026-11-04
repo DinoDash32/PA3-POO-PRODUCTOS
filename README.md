@@ -5,6 +5,12 @@ Gestión de productos con ArrayList y Collections en Java
 
 Este proyecto es un programa en Java que gestiona productos en memoria usando colecciones. Elegimos productos porque tienen datos claros (id, nombre, categoría, precio y stock) y es un caso fácil de entender y de probar. El programa permite listar, agregar, buscar, eliminar y ordenar productos desde un menú en la consola.
 
+## Menú interactivo y ejecución del sistema
+
+Implementación de la interfaz de consola mediante un bucle `while` y una estructura `switch` que permite navegar fluidamente por las opciones del 0 al 6. Incluye validación de entradas con `Scanner` para evitar errores y llamadas correctas a todos los métodos desarrollados por el equipo.
+
+Fabriccio Marticorena Colan (Integrante 4): Menú interactivo, validación de flujo de navegación y recopilación de evidencias del sistema.
+
 ## Cómo se guardan los datos
 
 Los productos se guardan en un ArrayList<Producto> dentro de la clase GestorProductos. Cada producto es un objeto de la clase Producto, con su id, nombre, categoría, precio y stock.
