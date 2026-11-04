@@ -29,12 +29,33 @@ public class GestorProductos {
     }
 
     // ===== PARTE DEL INTEGRANTE 2 =====
+    // Agregar un producto verificando que no se repita el ID
     public void agregarProducto(Producto p) {
-        // pendiente
+        // Verificar si el ID ya existe
+        for (Producto producto : productos) {
+
+            if (producto.getId() == p.getId()) {
+                System.out.println("El ID ya existe.");
+                return;
+            }
+        }
+        // Agregar el producto a la lista
+        productos.add(p);
+
+        System.out.println("Producto agregado correctamente.");
     }
 
+    // Buscar un producto por su ID
     public Producto buscarPorId(int id) {
-        return null; // pendiente
+        // Recorrer la lista de productos
+        for (Producto p : productos) {
+            // Comparar el ID
+            if (p.getId() == id) {
+                return p;
+            }
+        }
+        // Si no encuentra el producto
+        return null;
     }
 
     // ===== PARTE DEL INTEGRANTE 3 =====
