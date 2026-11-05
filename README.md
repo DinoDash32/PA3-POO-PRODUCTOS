@@ -64,3 +64,6 @@ Las capturas de pantalla del funcionamiento y del código se guardarán en la ca
 https://github.com/DinoDash32/PA3-POO-PRODUCTOS.git
 
 ## Video de exposición
+
+https://youtu.be/YTVZVktsuSk?si=0OIxYnvHIFnijV1o
+
