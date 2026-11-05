@@ -5,7 +5,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         GestorProductos gestor = new GestorProductos();
         
-        // Cargamos los datos iniciales de prueba
         gestor.cargarDatosIniciales();
         
         int opcion = -1;
@@ -23,10 +22,9 @@ public class Main {
             System.out.println("0. Salir");
             System.out.print("Elige una opción: ");
 
-            // Validación por si el usuario ingresa texto en lugar de un número
             if (scanner.hasNextInt()) {
                 opcion = scanner.nextInt();
-                scanner.nextLine(); // Limpiar el buffer de entrada
+                scanner.nextLine();
 
                 switch (opcion) {
                     case 1:
@@ -38,7 +36,7 @@ public class Main {
                         System.out.println("\n--- AGREGAR NUEVO PRODUCTO ---");
                         System.out.print("Ingrese ID (número entero): ");
                         int id = scanner.nextInt();
-                        scanner.nextLine(); // Limpiar buffer
+                        scanner.nextLine();
 
                         System.out.print("Ingrese Nombre: ");
                         String nombre = scanner.nextLine();
@@ -51,10 +49,10 @@ public class Main {
 
                         System.out.print("Ingrese Stock (número entero): ");
                         int stock = scanner.nextInt();
-                        scanner.nextLine(); // Limpiar buffer
+                        scanner.nextLine(); 
 
                         System.out.println("----------------------------------------");
-                        // Crear el objeto producto y enviarlo al gestor (valida ID repetido)
+                    
                         Producto nuevoProducto = new Producto(id, nombre, categoria, precio, stock);
                         gestor.agregarProducto(nuevoProducto);
                         System.out.println("----------------------------------------");
@@ -110,7 +108,7 @@ public class Main {
                 }
             } else {
                 System.out.println("\nError: Debe ingresar un número válido.");
-                scanner.nextLine(); // Limpiar la entrada incorrecta
+                scanner.nextLine();
             }
 
         } while (opcion != 0);
