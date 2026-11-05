@@ -28,10 +28,8 @@ public class GestorProductos {
         }
     }
 
-    // ===== PARTE DEL INTEGRANTE 2 =====
-    // Agregar un producto verificando que no se repita el ID
     public void agregarProducto(Producto p) {
-        // Verificar si el ID ya existe
+       
         for (Producto producto : productos) {
 
             if (producto.getId() == p.getId()) {
@@ -39,35 +37,31 @@ public class GestorProductos {
                 return;
             }
         }
-        // Agregar el producto a la lista
+      
         productos.add(p);
 
         System.out.println("Producto agregado correctamente.");
     }
 
-    // Buscar un producto por su ID
+   
     public Producto buscarPorId(int id) {
-        // Recorrer la lista de productos
+       
         for (Producto p : productos) {
-            // Comparar el ID
+       
             if (p.getId() == id) {
                 return p;
             }
         }
-        // Si no encuentra el producto
         return null;
     }
 
-    // ===== PARTE DEL INTEGRANTE 3 =====
     public boolean eliminarPorId(int id) {
-        // 1. Buscar el producto con ese id (sin borrar todavía)
         Producto encontrado = null;
         for (Producto p : productos) {
             if (p.getId() == id) {
                 encontrado = p;
             }
         }
-        // 2. Si existe, quitarlo de la lista y avisar con true; si no, false
         if (encontrado != null) {
             productos.remove(encontrado);
             return true;
@@ -76,7 +70,6 @@ public class GestorProductos {
     }
 
     public void ordenarPorPrecio() {
-        // Menor a mayor precio
         Collections.sort(productos, new Comparator<Producto>() {
             @Override
             public int compare(Producto a, Producto b) {
@@ -86,7 +79,6 @@ public class GestorProductos {
     }
 
     public void ordenarPorNombre() {
-        // Orden alfabético (sin distinguir mayúsculas)
         Collections.sort(productos, new Comparator<Producto>() {
             @Override
             public int compare(Producto a, Producto b) {
